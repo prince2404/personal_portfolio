@@ -1,3 +1,35 @@
+//function for showing more skills
+
+function showMore(){
+    var skillsRow2 = document.getElementById("skills-row-2");
+    var showMore = document.getElementById("see-more");
+    if(skillsRow2.style.display === "none"){
+        skillsRow2.style.display = "flex";
+
+        
+        showMore.innerHTML = "See Less";
+    }
+    else{
+        skillsRow2.style.display = "none";
+        showMore.innerHTML = "See More";
+
+    }
+} 
+
+//function for showing more projects
+function showMoreProjects(){
+    var projectRow2 = document.getElementById("project-row2");
+    var seeMoreProjects = document.getElementById("see-more-projects");
+    if(projectRow2.style.display === "none"){
+        projectRow2.style.display = "grid";
+        seeMoreProjects.innerHTML = "See Less";
+    }
+    else{
+        projectRow2.style.display = "none";
+        seeMoreProjects.innerHTML = "See More";
+    }
+}
+
 var tablinks = document.getElementsByClassName("tab-links");
 var tabcontent = document.getElementsByClassName("tab-content");
 

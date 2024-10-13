@@ -64,14 +64,28 @@ nav ul li a:hover::after{
     width: 100%;
 }
 
+.hello{
+    display: flex;
+    
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+.profile{
+    flex-basis: 40%;
+    width: 400px;
+    height: 400px;
+    
+}
+
 .header-text{
+    flex-basis: 50%;
     margin-top: 10%;
     font-size: 30px;
 }
 
 .header-text h1{
     margin-top: 10px;
-    font-size: 60px;
+    font-size: 45px;
 
 }
 
@@ -180,7 +194,7 @@ img{
     display: flex;
     justify-content: space-around;
     flex-wrap: wrap;
-    margin-bottom: 80px;
+    margin-bottom: 50px;
 }
 
 .logo-item{
@@ -196,6 +210,7 @@ img{
     font-size: 20px;
     margin-top: 8px;
 }
+
 
 
 /* --------projects------ */
@@ -275,10 +290,10 @@ img{
     margin: 50px auto;
     width: fit-content;
     border: 1px solid #ff004f;
-    padding: 14px 50px;
+    padding: 14px 30px;
     border-radius: 6px;
     text-decoration: none;
-    color: #fff;
+    color: black;
     transition: background 0.5s;
 }
 
@@ -377,12 +392,21 @@ nav .fas{
 
 @media(max-width : 600px){
     .header-text{
-        margin-top: 30%;
-        font-size: 16px;
+        margin-top: 5px;
+        font-size: 20px;
     }
 
     .header-text h1{
         font-size: 30px;
+        text-align: center;
+    }
+    .header-text, .profile{
+        flex-basis: 100%;
+    }
+    .profile{
+        height: 300px;
+        width: 300px;
+        text-align: center;
     }
 
     nav .fas{

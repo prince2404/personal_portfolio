@@ -23,8 +23,17 @@
                 <i class="fas fa-solid fa-bars" onclick="openmenu()"></i>
 
             </nav>
-            <div class="header-text">
-                <h1>Hello, My Name is <span>Prince</span><br> and I'm a passionate web developer</h1>
+            
+            <div class="hello">
+                <div class="profile">
+                    <img src="images/profile.jpg">
+                </div>
+                <div class="header-text">
+                    <h1>Hello, My Name is <span>Prince</span><br> and I'm a passionate web developer</h1>
+
+                </div>
+                
+                
             </div>
         </div>
 
@@ -137,7 +146,7 @@
                     </div>
                 
                 </div>
-                <div class="logo-row">
+                <div class="logo-row" id="skills-row-2" style="display: none;">
                    <div class="logo-item">
                       <img src="images/react.png"/>
                       <p>React</p>
@@ -156,6 +165,8 @@
                 
 
                 </div>
+                <button id="see-more" onclick="showMore()" class="btn">See More</button>
+
             </div>
         </div>
     </div>
@@ -191,7 +202,35 @@
                     </div>
                 </div>
             </div>
-            <a href="#" class="btn">See More</a>
+
+            <div class="work-list" id="project-row2" style="display: none;">
+                <div class="work">
+                    <img src="images/calculator.png"/>
+                    <div class="layer">
+                        <h3>Calculator</h3>
+                        <p>A simple, fully functional calculator using HTML, CSS and Javascript</p>
+                        <a href="https://prince2404.github.io/calculator/"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                    </div>
+                </div>
+                <div class="work">
+                    <img src="images/drum-kit.png"/>
+                    <div class="layer">
+                        <h3>Drum Kit</h3>
+                        <p>Drum Kit is an interactive web applications that allows users to produce their own drum beats and patterns.</p>
+                        <a href="https://prince2404.github.io/Drum_kit/"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                    </div>
+                </div>
+                <div class="work">
+                    <img src="images/dice.png"/>
+                    <div class="layer">
+                        <h3>Dice Game</h3>
+                        <p>The game features two dice,each displaying a random number of dots between 1 and 6 upon page refresh.</p>
+                        <a href="https://prince2404.github.io/Dice_game/"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                    </div>
+                </div>
+
+            </div>
+            <button class="btn" id="see-more-projects" onclick="showMoreProjects()">See More</button>
 
         </div>
     </div>
