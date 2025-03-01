@@ -79,5 +79,11 @@ form.addEventListener('submit', e => {
       .catch(error => console.error('Error!', error.message))
 });
 
+if ('serviceWorker' in navigator) {
+    window.addEventListener('load', () => {
+      navigator.serviceWorker.register('/service-worker.js');
+    });
+}
+
 
 
