@@ -46,6 +46,7 @@ nav ul li a{
     text-decoration: none;
     font-size: 18px;
     position: relative;
+    font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
 }
 
 nav ul li a::after{
@@ -90,7 +91,7 @@ nav ul li a:hover::after{
 }
 
 .header-text h1 span{
-    color: rgb(12, 28, 254);
+    color: #ff004f;
 }
 
 /* -------about------- */
@@ -285,6 +286,7 @@ img{
 
 .work:hover .layer{
     height: 100%;
+    background-color:rgb(227, 212, 211);
 }
 
 .btn{
